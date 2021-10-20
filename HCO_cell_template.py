@@ -1,5 +1,6 @@
 from neuron import h
 import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 
 class HCOcell(object):
     def __init__(self):
