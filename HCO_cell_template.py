@@ -51,7 +51,7 @@ class HCOcell(object):
             'gbar_kca': .01,
             'gbar_cas': .001,
             'gbar_cat': .005,
-            'gbar_hyper': .0002,
+            'gbar_hyper': .0001,
             'tauca_capool': self.soma.tauca_capool,
             'fca_capool': self.soma.fca_capool
         }
