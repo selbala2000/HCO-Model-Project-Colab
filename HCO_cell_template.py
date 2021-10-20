@@ -1,6 +1,5 @@
 from neuron import h
 import matplotlib.pyplot as plt
-import matplotlib.gridspec as gridspec
 
 class HCOcell(object):
     def __init__(self):
@@ -91,8 +90,7 @@ class HCOcell(object):
         clr = 'r' if cellid>0 else 'b'
         t = self.t
         fig = plt.figure(figsize=figsize)
-        gs = fig.add_gridspec(nrows=3,ncols=1,hspace=0.1)
-        axs = gs.subplots(sharex=True)
+        axs = fig.subplots(3,1,sharex=True,gridspec_kw={'hspace':0.1})
         axs[0].set_title(cellname)
         axs[0].plot(t,self.record['v'],clr)
         axs[0].set_ylim(-90,60)
