@@ -86,6 +86,7 @@ class HCOcell(object):
             self.record[v] = vec
     
     def plot_vars(self,cellid=0,figsize=None):
+        """Plot recorded variables."""
         cellname = 'Cell B' if cellid>0 else 'Cell A'
         clr = 'r' if cellid>0 else 'b'
         t = self.t
