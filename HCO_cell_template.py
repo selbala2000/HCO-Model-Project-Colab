@@ -90,7 +90,7 @@ class HCOcell(object):
         clr = 'r' if cellid>0 else 'b'
         t = self.t
         fig = plt.figure(figsize=figsize)
-        gs = fig.add_gridspec(3,hspace=0.1)
+        gs = fig.add_gridspec(3,1,hspace=0.1)
         axs = gs.subplots(sharex=True)
         axs[0].set_title(cellname)
         axs[0].plot(t,self.record['v'],clr)
