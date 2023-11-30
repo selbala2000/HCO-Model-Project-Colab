@@ -45,11 +45,11 @@ class HCOcell(object):
         
         self.default_parameters = {
             'gbar_leak': .03e-3, # (siemens/cm2)
-            'gbar_na': .1,
-            'gbar_kdr': .1,
-            'gbar_ka': .1,
-            'gbar_kca': .01,
-            'gbar_cas': .001,
+            'gbar_na': .3,
+            'gbar_kdr': .3,
+            'gbar_ka': .15,
+            'gbar_kca': .05,
+            'gbar_cas': .005,
             'gbar_cat': .005,
             'gbar_hyper': .0001,
             'tauca_capool': self.soma.tauca_capool,
